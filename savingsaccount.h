@@ -8,7 +8,7 @@ private:
     double interestRate;
     
 public:
-    SavingsAccount(std::string accountNumber, std::string accountHolder, double balance, double interestRate);
+    SavingsAccount(std::string accountNumber, std::string accountHolder, double accountBalance, double interestRate);
     void withdraw(const double& amount) override;
     void displayDetails() const override;
     friend SavingsAccount operator+(SavingsAccount& lhs, Account& rhs);
